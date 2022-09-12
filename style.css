@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b6777;
+    position: relative;
+    font-size: 2rem;
+}
+
+.app {
+    /* border: 1px solid red; */
+}
+
+/* .settings {
+    position: absolute;
+} */
+
+.answer { 
+    font-size: 14rem;
+    color: #c1432e;
+
+}
+
+.counter {
+    font-size: 10rem ;
+    color: #ce9e62;
+}
+
+.open-settings-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.8s;
+}
+
+.open-settings-btn:hover {
+    opacity: 1;
+    transform: rotate(120deg);
+}
+
+.icon {
+    color: #2c2c2c;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: #2c2c2c; */
+    /* opacity: 0.7; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal {
+    position: relative;
+    background-color: #2c2c2c;
+    opacity: 1;
+    padding: 5rem 8rem 2rem;
+    color: #4b6777;
+}
+
+.settings-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.settings-options-col {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    /* border: 1px solid red; */
+}
+
+label {
+    font-size: 1.7rem;
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+
+select {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 2rem;
+    color: #ce9e62;
+    background-color: inherit;
+    border: none;
+    text-align: left;
+    margin-bottom: 3rem;
+    
+}
+
+input {
+    font-size: inherit;
+    color: #ce9e62;
+    display: block;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid #4b6777;
+    margin-bottom: 3rem;
+}
+
+.save-options {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2c2c2c;
+    background-color: #c1432e;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.x-icon {
+    color: #c1432e
+}
+

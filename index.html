@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="app">
+        <p class="answer">Not yet!</p>
+        <div class="counter-container" data-counter>
+            <p class="counter"><span class="days" data-days>03</span>d:<span class="hours" data-hours>12</span>h:<span class="minutes" data-minutes>15</span>m:<span class="seconds" data-seconds>27</span>s
+            </p>
+        </div>
+        <button class="open-settings-btn" data-open-modal>
+            <i class="fa-solid fa-gear fa-3x icon"></i>
+        </button>
+    </main>
+    <div class="modal-container" data-modal-container >
+        <div class="modal">
+            <form action="" class="settings-options">
+                <div class="options-container">
+                    <div class="settings-options-col start-work">
+                        <label for="starting-day">When you start your work?</label>
+                        <select name="starting-day" id="">
+                            <option value="mon" selected>Monday</option>
+                            <option value="tue">Tuesday</option>
+                            <option value="wed">Wednesday</option>
+                            <option value="thu">Thursday</option>
+                            <option value="fri">Friday</option>
+                            <option value="sat">Saturday</option>
+                            <option value="sun">Sunday</option>
+                        </select>
+                        <label for="starting-hour">At what time you start your work?</label>
+                        <input type="time" name="starting-hour" value="09:00">
+                    </div>
+                    <div class="settings-options-col finish-work">
+                        <label for="finish-day">When you finish work?</label>
+                        <select name="finish-day" id="">
+                            <option value="mon">Monday</option>
+                            <option value="tue">Tuesday</option>
+                            <option value="wed">Wednesday</option>
+                            <option value="thu">Thursday</option>
+                            <option value="fri" selected>Friday</option>
+                            <option value="sat">Saturday</option>
+                            <option value="sun">Sunday</option>
+                        </select>
+                        <label for="finish-hour">At what time you start your work?</label>
+                        <input type="time" name="finish-hour" value="17:00">
+                    </div>
+                </div>
+                <button class="save-options" id="save-btn" data-save-options>Save</button>
+            </form>
+            <button class="close-modal-btn" data-close-modal>
+                <i class="fa-solid fa-xmark fa-2x x-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
